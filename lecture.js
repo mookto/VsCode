@@ -93,5 +93,18 @@ var p1 = {
    })
 
 
+   var p1 = {
+    name: 'HM Nayem',
+    age: 19,
+    email: 'hasan.m.nayem@gmail.com'
+   }
+  
+   function people (x,callPeople ){
+       console.log(p1.name+' '+p1.age)
+       callPeople(p1.email)
+   }
+   people(p1,function(y){
 
+    console.log(y)
+   })
   
